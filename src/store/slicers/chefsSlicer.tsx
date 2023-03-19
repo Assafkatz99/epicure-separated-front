@@ -5,7 +5,7 @@ import { IChef } from "../../typs/interfaces/slicersInterfaces";
 export const fetchChefs: any = createAsyncThunk(
   "chefs/fetchChefs",
   async () => {
-    const response = await axios.get("http://localhost:8000/api/chefs/");
+    const response = await axios.get("https://epicure-separatd-back.onrender.com/api/chefs/");
     return response.data;
   }
 );

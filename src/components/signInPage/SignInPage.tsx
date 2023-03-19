@@ -17,7 +17,7 @@ const SignInPage: React.FC = () => {
   const loginClick = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/users/sign-in",
+        "https://epicure-separatd-back.onrender.com/api/users/sign-in",
         { email, password }
       );
       if (response.status === 201) {

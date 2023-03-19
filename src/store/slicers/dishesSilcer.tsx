@@ -5,7 +5,7 @@ import { IDish } from "../../typs/interfaces/slicersInterfaces";
 export const fetchDishes: any = createAsyncThunk(
   "dishes/fetchDishes",
   async () => {
-    const response = await axios.get("http://localhost:8000/api/dishes/");
+    const response = await axios.get("https://epicure-separatd-back.onrender.com/api/dishes/");
     return response.data;
   }
 );

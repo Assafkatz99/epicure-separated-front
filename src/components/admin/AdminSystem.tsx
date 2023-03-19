@@ -146,7 +146,7 @@ const AdminSystem: React.FC = () => {
                               if (result) {
                                 try {
                                   const response = await axios.post(
-                                    "http://localhost:8000/api/chefs/delete",
+                                    "https://epicure-separatd-back.onrender.com/api/chefs/delete",
                                     { chef_id: chef.id }
                                   );
                                   console.log(response);
@@ -243,7 +243,7 @@ const AdminSystem: React.FC = () => {
                               if (result) {
                                 try {
                                   const response = await axios.post(
-                                    "http://localhost:8000/api/restaurants/delete",
+                                    "https://epicure-separatd-back.onrender.com/api/restaurants/delete",
                                     { rest_id: rest.id }
                                   );
                                   console.log(response);
@@ -379,7 +379,7 @@ const AdminSystem: React.FC = () => {
                               if (result) {
                                 try {
                                   const response = await axios.post(
-                                    "http://localhost:8000/api/dishes/delete",
+                                    "https://epicure-separatd-back.onrender.com/api/dishes/delete",
                                     { dish_id: dish.id }
                                   );
                                   console.log(response);

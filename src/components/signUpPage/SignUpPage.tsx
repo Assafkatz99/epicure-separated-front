@@ -38,7 +38,7 @@ const SignInPage: React.FC = () => {
 
               try {
                 const response = await axios.post(
-                  "http://localhost:8000/api/users/sign-up",
+                  "https://epicure-separatd-back.onrender.com/api/users/sign-up",
                   user_details
                 );
                 if (response.status === 201) {

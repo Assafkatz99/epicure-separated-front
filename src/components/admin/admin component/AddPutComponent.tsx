@@ -128,7 +128,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Add":
                   try {
                     const response = await axios.post(
-                      "http://localhost:8000/api/chefs",
+                      "https://epicure-separatd-back.onrender.com/api/chefs",
                       chefInformation
                     );
                   } catch (error: any) {
@@ -139,7 +139,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Put":
                   try {
                     const response = await axios.put(
-                      "http://localhost:8000/api/chefs",
+                      "https://epicure-separatd-back.onrender.com/api/chefs",
                       chefInformation
                     );
                   } catch (error: any) {
@@ -213,7 +213,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Add":
                   try {
                     const response = await axios.post(
-                      "http://localhost:8000/api/restaurants",
+                      "https://epicure-separatd-back.onrender.com/api/restaurants",
                       restaurantInformation
                     );
                   } catch (error: any) {
@@ -224,7 +224,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Put":
                   try {
                     const response = await axios.put(
-                      "http://localhost:8000/api/restaurants",
+                      "https://epicure-separatd-back.onrender.com/api/restaurants",
                       restaurantInformation
                     );
                   } catch (error: any) {
@@ -372,7 +372,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Add":
                   try {
                     const response = await axios.post(
-                      "http://localhost:8000/api/dishes",
+                      "https://epicure-separatd-back.onrender.com/api/dishes",
                       dishInformation
                     );
                   } catch (error: any) {
@@ -383,7 +383,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                 case "Put":
                   try {
                     const response = await axios.put(
-                      "http://localhost:8000/api/dishes",
+                      "https://epicure-separatd-back.onrender.com/api/dishes",
                       dishInformation
                     );
                   } catch (error: any) {
