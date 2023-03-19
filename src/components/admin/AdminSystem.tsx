@@ -12,6 +12,10 @@ import AddPutComponent from "./admin component/AddPutComponent";
 import "./AdminSystem.css";
 
 const AdminSystem: React.FC = () => {
+
+  const userString = sessionStorage.getItem("user");
+  const user_data = userString ? JSON.parse(userString) : null;
+
   const [boldName, setBoldName] = useState("Restaurants");
   const chefs = useSelector((state: RootState) => state.chefs.value);
   const restaurants = useSelector(
@@ -23,10 +27,14 @@ const AdminSystem: React.FC = () => {
   const [modalComponent, setModalComponent] = useState(<></>);
 
   return (
+
     <div className="admin_page">
       <section>
         <Navbar />
-        <div className="admin_system_div">
+
+          {
+          user_data.user.role === "admin" && 
+          <div className="admin_system_div">
           <div style={{ position: "relative" }} className="admin_buttons">
             <Clean_button
               name="Chefs"
@@ -411,9 +419,20 @@ const AdminSystem: React.FC = () => {
             </>
           )}
         </div>
+        }
+          {
+          user_data.user.role !== "admin" && 
+          <div className="admin_system_div">Access denied - Only user from type "admin" are allowed</div>
+        }
+
+        
+
+
       </section>
       <Footer />
     </div>
+
+
   );
 };
 

@@ -84,6 +84,8 @@ const SignInPage: React.FC = () => {
             </GenericButtons>
           </div>
         )}
+
+{console.log(user)}
         {user && (
           <>
             <div className="sign_in_div" style={{ height: "auto" }}>
@@ -93,14 +95,17 @@ const SignInPage: React.FC = () => {
                   You are currently logged in to our system. <br />
                   <br /> If you wish to log-out please use the button below
                 </label>
+                
+                {user.user.role === "admin" && 
                 <GenericButtons
-                  backgroundColor="white"
-                  onClick={() => {
-                    navigate("/admin");
-                  }}
+                backgroundColor="white"
+                onClick={() => {
+                  navigate("/admin");
+                }}
                 >
                   ADMIN
                 </GenericButtons>
+                }
                 <GenericButtons
                   backgroundColor="grey"
                   onClick={() => {

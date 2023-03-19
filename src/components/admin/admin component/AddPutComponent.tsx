@@ -17,6 +17,11 @@ interface IAddPutComponent {
 const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
   const data = props.data ? props.data : null;
 
+
+  const userString = sessionStorage.getItem("user");
+  const user_data = userString ? JSON.parse(userString) : null;
+
+
   // chef info
 
   const defaultChefInformation = {
@@ -129,7 +134,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/chefs",
-                      chefInformation
+                      {chefInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
