@@ -42,7 +42,7 @@ const SignInPage: React.FC = () => {
                   user_details
                 );
                 if (response.status === 201) {
-                  alert(response.data)
+                  alert(response.data);
                   navigate("/sign-in");
                 } else {
                   alert(response.data);

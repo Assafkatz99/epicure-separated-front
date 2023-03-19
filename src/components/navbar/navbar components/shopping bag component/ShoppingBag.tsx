@@ -20,7 +20,7 @@ const ShoppingBag: React.FC = () => {
   }, [orders]);
   const userString = sessionStorage.getItem("user");
   const user = userString ? JSON.parse(userString) : null;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="shopping_bag">
       {orders.length === 0 && (
@@ -29,7 +29,7 @@ const ShoppingBag: React.FC = () => {
             <img src="/assets/logos/big_grey_shopping_bag.svg"></img>
             <span>YOUR BAG IS EMPTY</span>
           </div>
-          <ShoppingBagButtons backgroundColor="white" >
+          <ShoppingBagButtons backgroundColor="white">
             ORDER HISTORY
           </ShoppingBagButtons>
         </>
@@ -56,10 +56,12 @@ const ShoppingBag: React.FC = () => {
             <ShoppingBagButtons
               className="shopping_bag_buttons"
               backgroundColor="black"
-              onClick={()=>{if(!user){
-                alert("please sign-in to continue with your purchase") 
-                navigate("/sign-in")
-              }}}
+              onClick={() => {
+                if (!user) {
+                  alert("please sign-in to continue with your purchase");
+                  navigate("/sign-in");
+                }
+              }}
             >
               CHECKOUT ₪{orderTotalPrice}
             </ShoppingBagButtons>

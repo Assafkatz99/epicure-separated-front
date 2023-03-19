@@ -53,7 +53,11 @@ const Navbar: React.FC = () => {
             Privacy Policy
           </NavLink>
         </div>
-          {user && <span style={{color:"#de9000",fontWeight:"bold"}}>Welcome, {user.user.first_name}!</span>}
+        {user && (
+          <span style={{ color: "#de9000", fontWeight: "bold" }}>
+            Welcome, {user.user.first_name}!
+          </span>
+        )}
         <div className="menu-right">
           <button className="hamburger-button" onClick={toggleMenu}>
             <img src="/assets/logos/hamburger-icon.svg" />

@@ -5,7 +5,9 @@ import { IDish } from "../../typs/interfaces/slicersInterfaces";
 export const fetchDishes: any = createAsyncThunk(
   "dishes/fetchDishes",
   async () => {
-    const response = await axios.get("https://epicure-separatd-back.onrender.com/api/dishes/");
+    const response = await axios.get(
+      "https://epicure-separatd-back.onrender.com/api/dishes/"
+    );
     return response.data;
   }
 );
@@ -50,7 +52,6 @@ export const dishesSlice = createSlice({
       .addCase(fetchDishes.fulfilled, (state, action) => {
         state.value = action.payload;
         state.initialValue = action.payload;
-
       })
       .addCase(fetchDishes.rejected, (state, action) => {
         console.log(action.error.message);

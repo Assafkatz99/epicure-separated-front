@@ -17,10 +17,8 @@ interface IAddPutComponent {
 const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
   const data = props.data ? props.data : null;
 
-
   const userString = sessionStorage.getItem("user");
   const user_data = userString ? JSON.parse(userString) : null;
-
 
   // chef info
 
@@ -134,7 +132,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/chefs",
-                      {chefInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
+                      { chefInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -145,7 +146,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/chefs",
-                      {chefInformation},{headers: {authorization: `Bearer ${user_data.token}`}}
+                      { chefInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -154,7 +158,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
               }
 
               window.location.reload();
-            }}>
+            }}
+          >
             <section>
               <div>First Name</div>
               <input
@@ -219,7 +224,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/restaurants",
-                      {restaurantInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
+                      { restaurantInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -230,7 +238,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/restaurants",
-                      {restaurantInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
+                      { restaurantInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -239,7 +250,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
               }
 
               window.location.reload();
-            }}>
+            }}
+          >
             <section>
               <div>Name</div>
               <input
@@ -302,7 +314,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                     ...restaurantInformation,
                     is_favorite: event.target.value === "true",
                   })
-                }>
+                }
+              >
                 <option value="true">True ✔️</option>
                 <option value="false">False ❌</option>
               </select>
@@ -378,7 +391,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/dishes",
-                      {dishInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
+                      { dishInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -389,7 +405,10 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/dishes",
-                      {dishInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
+                      { dishInformation },
+                      {
+                        headers: { authorization: `Bearer ${user_data.token}` },
+                      }
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -398,7 +417,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
               }
 
               window.location.reload();
-            }}>
+            }}
+          >
             <section>
               <div>Name</div>
               <input
@@ -477,7 +497,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         isVegan: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
@@ -494,7 +515,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         isVegetarian: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
@@ -511,7 +533,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         isSpicy: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
@@ -539,7 +562,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                     ...dishInformation,
                     is_signature: event.target.value === "true",
                   })
-                }>
+                }
+              >
                 <option value="true">True ✔️</option>
                 <option value="false">False ❌</option>
               </select>
@@ -557,7 +581,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         breakfast: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
@@ -574,7 +599,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         lunch: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
@@ -591,7 +617,8 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                         dinner: event.target.value === "true",
                       },
                     })
-                  }>
+                  }
+                >
                   <option value="true">True ✔️</option>
                   <option value="false">False ❌</option>
                 </select>
