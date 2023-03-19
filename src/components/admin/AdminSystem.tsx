@@ -155,7 +155,7 @@ const AdminSystem: React.FC = () => {
                                 try {
                                   const response = await axios.post(
                                     "https://epicure-separatd-back.onrender.com/api/chefs/delete",
-                                    { chef_id: chef.id }
+                                    { chef_id: chef.id },{headers: {authorization: `Bearer ${user_data.token}`}}
                                   );
                                   console.log(response);
                                 } catch (error: any) {
@@ -252,7 +252,7 @@ const AdminSystem: React.FC = () => {
                                 try {
                                   const response = await axios.post(
                                     "https://epicure-separatd-back.onrender.com/api/restaurants/delete",
-                                    { rest_id: rest.id }
+                                    { rest_id: rest.id },{headers: {authorization: `Bearer ${user_data.token}`}}
                                   );
                                   console.log(response);
                                 } catch (error: any) {
@@ -388,7 +388,7 @@ const AdminSystem: React.FC = () => {
                                 try {
                                   const response = await axios.post(
                                     "https://epicure-separatd-back.onrender.com/api/dishes/delete",
-                                    { dish_id: dish.id }
+                                    { dish_id: dish.id },{headers: {authorization: `Bearer ${user_data.token}`}}
                                   );
                                   console.log(response);
                                 } catch (error: any) {

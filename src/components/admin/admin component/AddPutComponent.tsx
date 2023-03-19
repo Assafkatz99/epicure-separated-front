@@ -145,7 +145,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/chefs",
-                      chefInformation
+                      {chefInformation},{headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -219,7 +219,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/restaurants",
-                      restaurantInformation
+                      {restaurantInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -230,7 +230,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/restaurants",
-                      restaurantInformation
+                      {restaurantInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -378,7 +378,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.post(
                       "https://epicure-separatd-back.onrender.com/api/dishes",
-                      dishInformation
+                      {dishInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
@@ -389,7 +389,7 @@ const AddPutComponent: React.FC<IAddPutComponent> = (props) => {
                   try {
                     const response = await axios.put(
                       "https://epicure-separatd-back.onrender.com/api/dishes",
-                      dishInformation
+                      {dishInformation}, {headers: {authorization: `Bearer ${user_data.token}`}}
                     );
                   } catch (error: any) {
                     alert(error.response.data);
