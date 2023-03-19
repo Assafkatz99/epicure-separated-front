@@ -1,0 +1,138 @@
+.grey_screen {
+  background-color: rgba(13, 11, 11, 0.767);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  height: 86%;
+  width: 30%;
+  min-width: 400px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  width: 60%;
+  max-height: 70%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+
+  padding: 15px 20px 50px 20px;
+  margin: 1px;
+}
+
+.content::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa75;
+  border-radius: 2px;
+  display: none;
+}
+
+.content:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+
+.content::-webkit-scrollbar-thumb:vertical:active {
+  display: block;
+}
+
+.dish_img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  box-shadow: -1px 6px 9px 1px rgba(13, 11, 11, 0.171);
+}
+
+.icons {
+  min-height: 30px;
+  height: 3.5vw;
+}
+
+.dish_pricing {
+  width: 99%;
+  position: static;
+  bottom: 10px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dish_pricing hr {
+  all: unset;
+  border-bottom: black 1px solid;
+  width: 25%;
+}
+
+.choose_a_side_div p,
+.changes_div p {
+  width: 100%;
+  font-size: 1.3vw;
+}
+
+.choose_a_side_div,
+.changes_div,
+.quantity_div {
+  width: 80%;
+}
+
+.choose_a_side_div div,
+.changes_div div {
+  padding-top: 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.choose_a_side_div input,
+.changes_div input {
+  margin-right: 10px;
+}
+
+.quantity_div div {
+  padding-top: 15px;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+.quantity_div button {
+  display: flex;
+  padding-bottom: 0.7vw;
+  align-items: center;
+  font-size: 4vw;
+}
+
+.disabled {
+  color: rgba(128, 128, 128, 0.488);
+  cursor: not-allowed;
+}

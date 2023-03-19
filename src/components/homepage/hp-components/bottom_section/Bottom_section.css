@@ -1,0 +1,33 @@
+.bottom_section_div {
+  padding: 30px 10vw;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fafafa;
+}
+
+.left_side_bottom_section span {
+  font-size: 2vw;
+}
+.left_side_bottom_section p {
+  font-size: 1.5vw;
+  text-align: justify;
+}
+
+.apple_google_store_icons {
+  display: flex;
+  gap: 1vw;
+}
+
+.left_side_bottom_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40vw;
+}
+
+@media screen and (max-width: 500px) {
+  .apple_google_store_icons img {
+    width: 50px;
+  }
+}

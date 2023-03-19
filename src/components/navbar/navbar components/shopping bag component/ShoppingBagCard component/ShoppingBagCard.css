@@ -1,0 +1,58 @@
+.dish_shopping_bag_card {
+  display: flex;
+  position: relative;
+}
+
+.dish_shopping_bag_card img {
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+}
+.right_side_dish_card {
+  background-color: #f9f4ea;
+  width: 246px;
+  height: 96px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+.upper_part_dish_card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.upper_part_dish_card span {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #de9200;
+}
+.quantity_square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #de9200;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: #979797 0.5px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+.right_button_price {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.order_changes_span{
+  font-size: 15px;
+  width: 80%;
+}

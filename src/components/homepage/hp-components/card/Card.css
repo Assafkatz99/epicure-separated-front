@@ -1,0 +1,102 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 27vw;
+}
+.card:hover {
+  cursor: pointer;
+}
+.small_dish {
+  width: 18vw;
+}
+
+.small_dish .card_bottom_div h3 {
+  font-size: 1.7vw;
+}
+.small_dish .card_bottom_div h2 {
+  font-size: 1.2vw;
+}
+
+.card h3 {
+  font-size: 2.3vw;
+}
+.card h2 {
+  font-size: 1.5vw;
+}
+
+.card_bottom_div {
+  background-color: #f9f4ea;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 1.5vw;
+  padding: 5px;
+
+  position: relative;
+}
+
+.rest .card_bottom_div {
+  height: 12vw;
+}
+.dish .card_bottom_div {
+  height: 24vw;
+}
+.small_dish .card_bottom_div {
+  height: 16.7vw;
+}
+
+.card_bottom_div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.card_bottom_div hr {
+  all: unset;
+  border-bottom: black 1px solid;
+  width: 25%;
+}
+
+.card_img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rest .card_img {
+  height: 16vw;
+}
+
+.dish .card_img {
+  height: 21vw;
+}
+
+.small_dish .card_img {
+  height: 11.8vw;
+}
+
+.rating,
+.icon {
+  height: clamp(15px, 3vw, 40px);
+}
+
+.card div p {
+  font-size: 1.5vw;
+}
+
+.pricing {
+  width: 99%;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.icons_section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

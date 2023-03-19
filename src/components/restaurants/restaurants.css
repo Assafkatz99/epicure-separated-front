@@ -1,0 +1,31 @@
+.filters_first_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  height: 7vw;
+}
+
+.buttons_first_row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 37vw;
+  min-width: 400px;
+}
+
+.filters_second_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45px;
+  height: 5vw;
+  background-color: #e5e5e5;
+}
+
+.restaurants_grid {
+  display: grid;
+  padding: 30px 8vw;
+  gap: 2.5vw 1.5vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: min-content;
+}

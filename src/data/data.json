@@ -1,0 +1,332 @@
+{
+  "chef_of_the_week_id": 1,
+  "chefs": [
+    {
+      "id": 1,
+      "first_name": "1 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://plus.unsplash.com/premium_photo-1661778021952-65997d03b2b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlZnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "restaurant_ids": [1]
+    },
+    {
+      "id": 2,
+      "first_name": "2 Gordon",
+      "last_name": "Ramsay",
+      "about": "Gordon Ramsay is a Scottish chef, restaurateur, and television personality...",
+      "img_url": "https://media.istockphoto.com/id/1369920192/photo/chef-presenting-a-plate-of-food.jpg?b=1&s=170667a&w=0&k=20&c=5Pg68hwW09ke2lQAVCd5VyZCARI6NGKT4vWoV01CW04=",
+      "restaurant_ids": [2]
+    },
+    {
+      "id": 3,
+      "first_name": "3 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2hlZnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [3]
+    },
+    {
+      "id": 4,
+      "first_name": "4 Gordon",
+      "last_name": "Ramsay",
+      "about": "Gordon Ramsay is a Scottish chef, restaurateur, and television personality...",
+      "img_url": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hlZnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [4]
+    },
+    {
+      "id": 5,
+      "first_name": "5 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hlZnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [5]
+    },
+    {
+      "id": 6,
+      "first_name": "6 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://images.unsplash.com/photo-1565608087341-404b25492fee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoZWZzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [6]
+    },
+    {
+      "id": 7,
+      "first_name": "7 Gordon",
+      "last_name": "Ramsay",
+      "about": "Gordon Ramsay is a Scottish chef, restaurateur, and television personality...",
+      "img_url": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNoZWZzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [7]
+    },
+    {
+      "id": 8,
+      "first_name": "8 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNoZWZzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [8]
+    },
+    {
+      "id": 9,
+      "first_name": "9 Gordon",
+      "last_name": "Ramsay",
+      "about": "Gordon Ramsay is a Scottish chef, restaurateur, and television personality...",
+      "img_url": "https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNoZWZzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "restaurant_ids": [9]
+    },
+    {
+      "id": 10,
+      "first_name": "10 Thomas",
+      "last_name": "Keller",
+      "about": "Chef Thomas Keller is one of the most highly-regarded chefs in the world...",
+      "img_url": "https://media.istockphoto.com/id/1369920192/photo/chef-presenting-a-plate-of-food.jpg?b=1&s=170667a&w=0&k=20&c=5Pg68hwW09ke2lQAVCd5VyZCARI6NGKT4vWoV01CW04=",
+      "restaurant_ids": [10, 11]
+    }
+  ],
+
+  "restaurants": [
+    {
+      "id": 1,
+      "is_favorite": true,
+      "name": "The French Laundry",
+      "img_url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [9, 21],
+      "address": "6640 Washington St, Yountville, CA 94599",
+      "rating": 5,
+      "dish_ids": [1, 2, 1, 2, 4],
+      "opening_year": 2023
+    },
+    {
+      "id": 2,
+      "is_favorite": true,
+      "name": "Per Se",
+      "img_url": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 21],
+      "address": "10 Columbus Circle, New York, NY 10019",
+      "rating": 4,
+      "dish_ids": [3, 5, 4, 6, 7, 8, 5, 1, 4],
+      "opening_year": 2020
+    },
+    {
+      "id": 3,
+      "is_favorite": true,
+      "name": "Gordon Ramsay Steak",
+      "img_url": "https://images.unsplash.com/photo-1564758564527-b97d79cb27c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 22],
+      "address": "3655 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "rating": 4,
+      "dish_ids": [1, 2, 3, 4, 5, 6],
+      "opening_year": 2010
+    },
+    {
+      "id": 4,
+      "is_favorite": true,
+      "name": "The French Laundry",
+      "img_url": "https://images.unsplash.com/photo-1515668166700-4c11137632fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [9, 21],
+      "address": "6640 Washington St, Yountville, CA 94599",
+      "rating": 5,
+      "dish_ids": [1, 2],
+      "opening_year": 2018
+    },
+    {
+      "id": 5,
+      "is_favorite": true,
+      "name": "Per Se",
+      "img_url": "https://images.unsplash.com/photo-1564758565388-0d5da0cbb08c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 21],
+      "address": "10 Columbus Circle, New York, NY 10019",
+      "rating": 4,
+      "dish_ids": [3, 1, 5, 4, 8, 9, 4, 4],
+      "opening_year": 2013
+    },
+    {
+      "id": 6,
+      "is_favorite": true,
+      "name": "Gordon Ramsay Steak",
+      "img_url": "https://previews.123rf.com/images/natavkusidey/natavkusidey1507/natavkusidey150700286/42738819-school-lunch-box-for-kids-with-food-in-the-form-of-funny-faces.jpg",
+      "hours": [11, 22],
+      "address": "3655 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "rating": 4,
+      "dish_ids": [1],
+      "opening_year": 2023
+    },
+    {
+      "id": 7,
+      "is_favorite": true,
+      "name": "The French Laundry",
+      "img_url": "https://images.unsplash.com/photo-1515668236457-83c3b8764839?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [9, 12],
+      "address": "6640 Washington St, Yountville, CA 94599",
+      "rating": 5,
+      "dish_ids": [1, 2, 1, 1, 1, 1, 1],
+      "opening_year": 2023
+    },
+    {
+      "id": 8,
+      "is_favorite": true,
+      "name": "Per Se",
+      "img_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 21],
+      "address": "10 Columbus Circle, New York, NY 10019",
+      "rating": 4,
+      "dish_ids": [3, 4],
+      "opening_year": 2023
+    },
+    {
+      "id": 9,
+      "is_favorite": true,
+      "name": "Gordon Ramsay Steak",
+      "img_url": "https://images.unsplash.com/photo-1532117472055-4d0734b51f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 22],
+      "address": "3655 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "rating": 4,
+      "dish_ids": [1],
+      "opening_year": 2023
+    },
+    {
+      "id": 10,
+      "is_favorite": true,
+      "name": "The French Laundry",
+      "img_url": "https://plus.unsplash.com/premium_photo-1670740967011-86730910a2e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [9, 21],
+      "address": "6640 Washington St, Yountville, CA 94599",
+      "rating": 5,
+      "dish_ids": [1, 2],
+      "opening_year": 2023
+    },
+    {
+      "id": 11,
+      "is_favorite": true,
+      "name": "Per Se",
+      "img_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "hours": [11, 9],
+      "address": "10 Columbus Circle, New York, NY 10019",
+      "rating": 4,
+      "dish_ids": [3, 4],
+      "opening_year": 2023
+    }
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "name": "1 Pesto Pasta",
+      "img_url": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "ingredients": ["Penne", "Basil Pesto", "Parmesan Cheese", "Olive Oil"],
+      "price": 11,
+      "icons": {
+        "isSpicy": true,
+        "isVegan": false,
+        "isVegetarian": true
+      },
+      "sides": ["Caesar Salad"],
+      "changes": [],
+      "is_signature": true,
+      "dishTiming": {
+        "breakfast": true,
+        "lunch": false,
+        "dinner": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "2 Tacos Al Pastor",
+      "img_url": "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "ingredients": [
+        "Corn Tortillas",
+        "Pork",
+        "Pineapple",
+        "Onions",
+        "Cilantro",
+        "Lime"
+      ],
+      "price": 14,
+      "icons": {
+        "isSpicy": false,
+        "isVegan": true,
+        "isVegetarian": false
+      },
+      "sides": ["Refried Beans", "Spanish Rice"],
+      "changes": ["abcd hello", "sadasddassd"],
+      "is_signature": true,
+      "dishTiming": {
+        "breakfast": true,
+        "lunch": false,
+        "dinner": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "3 Grilled Chicken",
+      "img_url": "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "ingredients": ["Chicken Breast", "Salt", "Pepper", "Garlic", "Lemon"],
+      "price": 12,
+      "icons": {
+        "isSpicy": true,
+        "isVegan": true,
+        "isVegetarian": true
+      },
+      "sides": ["Rice", "Roasted Vegetables"],
+      "changes": [],
+      "is_signature": true,
+      "dishTiming": {
+        "breakfast": true,
+        "lunch": false,
+        "dinner": true
+      }
+    },
+    {
+      "id": 4,
+      "name": "4 Vegetable Stir Fry",
+      "img_url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "ingredients": [
+        "Broccoli",
+        "Carrots",
+        "Onions",
+        "Mushrooms",
+        "Soy Sauce",
+        "Garlic"
+      ],
+      "price": 10,
+      "icons": {
+        "isSpicy": false,
+        "isVegan": false,
+        "isVegetarian": true
+      },
+      "sides": ["Rice", "Egg Rolls"],
+      "changes": [],
+      "is_signature": true,
+      "dishTiming": {
+        "breakfast": false,
+        "lunch": true,
+        "dinner": true
+      }
+    },
+    {
+      "id": 5,
+      "name": "5 Spaghetti Bolognese",
+      "img_url": "https://images.unsplash.com/photo-1598214886806-c87b84b7078b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHJlc3RhdXJhbnQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "ingredients": [
+        "Spaghetti",
+        "Ground Beef",
+        "Tomato Sauce",
+        "Onions",
+        "Garlic",
+        "Red Wine"
+      ],
+      "price": 13,
+      "icons": {
+        "isSpicy": false,
+        "isVegan": false,
+        "isVegetarian": false
+      },
+      "sides": ["Garlic Bread"],
+      "changes": [],
+      "is_signature": true,
+      "dishTiming": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+.grey_icons_div {
+  background-color: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  height: max(150px, 21vw);
+}
+
+.grey_icons_div span {
+  font-size: 2.5vw;
+}
+
+.icons_div {
+  display: flex;
+  text-align: center;
+  gap: 8vw;
+}
+
+.icons_div img {
+  margin-bottom: 20px;
+  height: 4.5vw;
+  width: auto;
+}
+
+.icons_div p {
+  font-size: 2vw;
+}
