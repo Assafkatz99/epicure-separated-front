@@ -9,6 +9,7 @@ import Navbar from "../navbar/Navbar";
 import "./SignUpPage.css";
 
 const SignInPage: React.FC = () => {
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
   let user_details: IUser = {
     first_name: "",
@@ -55,7 +56,7 @@ const SignInPage: React.FC = () => {
             <input placeholder="First name" type="text" />
             <input placeholder="Last name" type="text" />
             <input placeholder="Email address" type="text" />
-            <input placeholder="Password" type="text" />
+            <input placeholder="Password" type="password" />
 
             <GenericButtons backgroundColor="white" type="submit">
               SIGN UP

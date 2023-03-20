@@ -33,6 +33,7 @@ const Popular_restaurant: React.FC = () => {
                 key={index}
                 onclick={() => {
                   navigation(`/restaurants/${rest.id}`);
+                  window.scrollTo(0, 0);
                 }}
                 chefName={chef_name}
                 class="rest"
@@ -48,7 +49,7 @@ const Popular_restaurant: React.FC = () => {
           navigation(`/restaurants`);
         }}
       >
-        All Restaurant {">>"}
+        All Restaurants {">>"}
       </button>
     </div>
   );

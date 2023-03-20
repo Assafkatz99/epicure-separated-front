@@ -16,12 +16,6 @@ import ShoppingBag from "./components/navbar/navbar components/shopping bag comp
 import AdminSystem from "./components/admin/AdminSystem";
 
 function App() {
-  useEffect(() => {
-    window.addEventListener("load", function () {
-      window.scrollTo(0, 0);
-    });
-  }, []);
-
   const dispatch = useDispatch();
 
   useEffect(() => {

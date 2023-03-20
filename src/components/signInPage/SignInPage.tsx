@@ -7,6 +7,7 @@ import Navbar from "../navbar/Navbar";
 import "./SignInPage.css";
 
 const SignInPage: React.FC = () => {
+  window.scrollTo(0, 0);
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

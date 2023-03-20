@@ -5,12 +5,14 @@ import "./navbar.css";
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState("not-active");
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(menuOpen==="active" ? "not-active" : "active");
   };
   const [showModal, setShowModal] = useState(false);
+
+
 
   const userString = sessionStorage.getItem("user");
   const user = userString ? JSON.parse(userString) : null;
@@ -29,7 +31,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
       <div className="menu">
-        <div className={`menu-left ${menuOpen ? "show" : ""}`}>
+        <div className={`menu-left ${menuOpen==="active" ? "show" : "no_show"}`}>
           <NavLink
             to="/restaurants"
             className={({ isActive }) => (isActive ? "underline" : "notActive")}
@@ -59,9 +61,13 @@ const Navbar: React.FC = () => {
           </span>
         )}
         <div className="menu-right">
-          <button className="hamburger-button" onClick={toggleMenu}>
-            <img src="/assets/logos/hamburger-icon.svg" />
-          </button>
+          <div className="box" >
+            <div className={`menu_btn ${menuOpen}`} onClick={toggleMenu}>
+              <span className="hamburger_span"></span>
+              <span className="hamburger_span"></span>
+              <span className="hamburger_span"></span>
+            </div>
+          </div>
           <div className="menu-right-icons">
             <input
               type="text"

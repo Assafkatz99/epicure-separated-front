@@ -29,3 +29,8 @@
 
   font-size: min(2.5vw, 25px);
 }
+
+
+@media screen and (max-width:500px) {
+  
+}

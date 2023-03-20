@@ -11,6 +11,7 @@ import { fetchChefs } from "../../store/slicers/chefsSlicer";
 import { useDispatch } from "react-redux";
 
 const Chefs: React.FC = () => {
+  window.scrollTo(0, 0);
   const [boldName, setBoldName] = useState("all");
 
   const chefs = useSelector((state: RootState) => state.chefs.value);

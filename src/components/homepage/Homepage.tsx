@@ -11,6 +11,7 @@ import Bottom_section from "./hp-components/bottom_section/Bottom_section";
 import Footer from "./hp-components/footer/Footer";
 
 const Homepage: React.FC = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <Navbar />

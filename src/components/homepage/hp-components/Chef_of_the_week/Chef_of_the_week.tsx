@@ -58,6 +58,7 @@ const Chef_of_the_week: React.FC = () => {
                 key={index}
                 onclick={() => {
                   navigation(`/restaurants/${restaurant?.id}`);
+                  window.scrollTo(0, 0);
                 }}
                 rest_img={restaurant?.img_url ? restaurant?.img_url : ""}
                 rest_name={restaurant?.name ? restaurant?.name : ""}

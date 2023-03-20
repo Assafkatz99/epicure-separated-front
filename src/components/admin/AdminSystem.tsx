@@ -12,6 +12,8 @@ import AddPutComponent from "./admin component/AddPutComponent";
 import "./AdminSystem.css";
 
 const AdminSystem: React.FC = () => {
+  window.scrollTo(0, 0);
+  
   const userString = sessionStorage.getItem("user");
   const user_data = userString ? JSON.parse(userString) : null;
 

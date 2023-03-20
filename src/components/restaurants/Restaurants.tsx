@@ -19,6 +19,7 @@ import { IChef, IRestaurant } from "../../typs/interfaces/slicersInterfaces";
 import { fetchChefs } from "../../store/slicers/chefsSlicer";
 
 const Restaurants: React.FC = () => {
+  window.scrollTo(0, 0);
   const dispatch = useDispatch();
   const restaurants = useSelector(
     (state: RootState) => state.restaurants.value
@@ -110,6 +111,7 @@ const Restaurants: React.FC = () => {
               key={index}
               onclick={() => {
                 navigation(`/restaurants/${restaurant.id}`);
+                window.scrollTo(0, 0);
               }}
               img={restaurant.img_url}
               name={restaurant.name}
