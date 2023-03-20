@@ -32,5 +32,21 @@
 
 
 @media screen and (max-width:500px) {
-  
+  .popular_restaurant span {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .popular_restaurant{
+    align-items: flex-start;
+    margin-left: 8vw;
+    width: 84%;
+  }
+  .popular_restaurant button {
+    align-self: unset;
+    margin-top: 10px;
+  }
+  .popular_restaurant_cards{
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
 }

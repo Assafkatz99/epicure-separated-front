@@ -22,7 +22,15 @@ const SignInPage: React.FC = () => {
         { email, password }
       );
       if (response.status === 201) {
-        sessionStorage.setItem("user", JSON.stringify(response.data));
+
+        sessionStorage.setItem("user", JSON.stringify(
+          {token : response.data.token, user : {
+            email : response.data.user.email,
+            first_name : response.data.user.first_name,
+            last_name : response.data.user.last_name,
+            role : response.data.user.role
+           } }
+          ));
 
         alert("Welcome!");
 
@@ -86,7 +94,6 @@ const SignInPage: React.FC = () => {
           </div>
         )}
 
-        {console.log(user)}
         {user && (
           <>
             <div className="sign_in_div" style={{ height: "auto" }}>

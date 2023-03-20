@@ -77,7 +77,6 @@ button:hover {
   height: 41px;
   box-sizing: border-box;
   border-radius: 4px;
-  background-color: white;
   background-image: url("../../../public/assets/logos/search_button.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -179,6 +178,7 @@ button:hover {
     display: none;
   }
   .menu-left {
+    z-index: -10 ;
     background-color: white;
     flex-direction: column;
     justify-content: space-around;
@@ -192,9 +192,7 @@ button:hover {
     box-sizing: border-box;
     box-shadow: 0px 7px 9px 1px rgb(13 11 11 / 17%);
   }
-  .menu-left.show {
-    display: flex;
-  }
+
 
   .menu-left-mobile {
     display: flex;
@@ -234,16 +232,21 @@ button:hover {
   }
 
   .menu-left.show {
-    animation: slideDown 0.5s forwards;
+    animation: slideDown 0.7s forwards;
+    display: flex;
+    z-index: -1;
+
   }
 
   .menu-left.no_show {
-    animation: slideUp 0.5s forwards;
+    animation: slideUp 0.8s forwards;
+    display: flex;
+    z-index: -1;
   }
 
   @keyframes slideDown {
     from {
-      transform: translateY(-100%);
+      transform: translateY(-130%);
     }
     to {
       transform: translateY(0%);
@@ -255,11 +258,11 @@ button:hover {
       transform: translateY(0%);
     }
     to {
-      transform: translateY(-110%);
+      transform: translateY(-130%);
     }
   }
 
-  
+
 
 .box {
   border-radius: 2px;
@@ -397,4 +400,4 @@ button:hover {
 }
 
 
-} 
+}

@@ -9,6 +9,8 @@ const Navbar: React.FC = () => {
 
   const toggleMenu = () => {
     setMenuOpen(menuOpen==="active" ? "not-active" : "active");
+    setTimeout(()=>{},1500)
+
   };
   const [showModal, setShowModal] = useState(false);
 
