@@ -15,7 +15,10 @@ const AdminSystem: React.FC = () => {
   const userString = sessionStorage.getItem("user");
   const user_data = userString ? JSON.parse(userString) : null;
 
-  const [boldName, setBoldName] = useState("Restaurants");
+  const sessionBoldName = sessionStorage.getItem("admin_bold_name");
+  const initialBoldName = sessionBoldName ? JSON.parse(sessionBoldName) : "Restaurants";
+
+  const [boldName, setBoldName] = useState(initialBoldName);
   const chefs = useSelector((state: RootState) => state.chefs.value);
   const restaurants = useSelector(
     (state: RootState) => state.restaurants.value
@@ -36,21 +39,31 @@ const AdminSystem: React.FC = () => {
               <Clean_button
                 name="Chefs"
                 bold={boldName === "Chefs"}
-                onClick={() => setBoldName("Chefs")}
+                onClick={() => 
+                  {
+                  setBoldName("Chefs")
+                  sessionStorage.setItem("admin_bold_name", JSON.stringify("Chefs"));
+                  }
+              }
               >
                 Chefs
               </Clean_button>
               <Clean_button
                 name="Restaurants"
                 bold={boldName === "Restaurants"}
-                onClick={() => setBoldName("Restaurants")}
+                onClick={() => {setBoldName("Restaurants")
+                sessionStorage.setItem("admin_bold_name", JSON.stringify("Restaurants"));}
+              
+              }
               >
                 Restaurants
               </Clean_button>
               <Clean_button
                 name="Dishes"
                 bold={boldName === "Dishes"}
-                onClick={() => setBoldName("Dishes")}
+                onClick={() => {setBoldName("Dishes")
+                sessionStorage.setItem("admin_bold_name", JSON.stringify("Dishes"));}
+              }
               >
                 Dishes
               </Clean_button>
